@@ -96,7 +96,7 @@ app.use("/", userRouter);
 
 
 app.all("*", (req,res,next)=>{
-    next(new ExpressError(404,"page not found!"));
+    next(new ExpressError(404,"page not found! Please click on the Explore button to go to the home page"));
 });
 
 app.use((err,req,res,next)=>{
